@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init({
+                publicKey: "5qx4GlNEaa3OO3Yig",
+            });
+        })();
+    </script>
+</head>
+
+<body>
+    <header class="header">
+        <a href="#" class="logo">Portfolio</a>
+
+        <nav class="navbar">
+            <a href="#home" style="--i:1" class="active">Home</a>
+            <a href="#about" style="--i:2">About</a>
+            <a href="#services" style="--i:3">Skills</a>
+            <a href="#skills" style="--i:4">Portfolio</a>
+            <a href="#contact" style="--i:5">Contact</a>
+        </nav>
+    </header>
+
+    <div class="hamburger" onclick="toggleMenu()">
+        <i class='bx bx-menu'></i>
+    </div>
+    <div class="hamburger-menu">
+        <div class="hamburger-menu-content" onclick="closeMenu()">
+            <i class='bx bx-x'></i>
+            <nav class="nav-list">
+                <a href="#home" style="--i:1" class="active">Home</a>
+                <a href="#about" style="--i:2">About</a>
+                <a href="#services" style="--i:3">Skills</a>
+                <a href="#skills" style="--i:4">Portfolio</a>
+                <a href="#contact" style="--i:5">Contact</a>
+            </nav>
+        </div>
+    </div>
+    <section class="home" id="home">
+        <img src="images/Home.png" alt="images">
+        <div class="home-content">
+            <h3>Hello, It's Me</h3>
+            <h1>Haroon Waheed</h1>
+            <h3>And I'm a <span class="text"></span></h3>
+            <p>I'm a Full Stack Developer. <br />
+                My first exposure to professional life through internship has benefited me mostly in
+                strengthening my personal skills. I have developed a positive attitude and a strong
+                sense of responsibility being innovative , resourceful, open and responsive to change. It has
+                created in me an interest in lifelong learning.
+            </p>
+            <div class="home-scl">
+                <a href="#" style="--i:7"><i class='bx bxl-facebook'></i></a>
+                <a href="#" style="--i:8"><i class='bx bxl-instagram'></i></a>
+                <a href="#" style="--i:9"><i class='bx bxl-whatsapp'></i></a>
+                <a href="#" style="--i:10"><i class='bx bxl-linkedin'></i></a>
+            </div>
+            <a href="#" class="btn-box">More About Me</a>
+        </div>
+        <span class="home-imgHover"></span>
+    </section>
+
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="./images/About.jpg" alt="">
+        </div>
+        <div class="about-text">
+            <h2>About <span>Me</span></h2>
+            <h4>Full Stack Developer!</h4>
+            <p>
+                I'm Haroon Waheed & I'm from Gujrat. I'm doing my graduation from FAST NUCES specialized in Software
+                Engineering. I've worked hard in my education & maintained a good CGPA.
+                Along with my degree I've completed Java, SQL and Web dev Courses online. Now I'm ready to apply my
+                knowledge into practice. Though I do not have any real life working experience, I've had a lot of
+                exposure to the software field.
+                My Goal is to build a successfull career as a Full Stack Developer. Moving forward in my career I hope
+                to expand my experience across different industries.
+                That's all about my self.
+                <!-- My first exposure to professional life through internship has benefited me mostly in
+                strengthening my personal skills. I have developed a positive attitude and a strong
+                sense of responsibility being innovative , resourceful, open and responsive to change. It has
+                created in me an interest in lifelong learning.
+                I'm attentive listener and effective oral communication skill -->
+            </p>
+            <a href="#" class="btn-box">More About Me</a>
+        </div>
+    </section>
+
+    <section>
+        <div class="services" id="services">
+            <div class="container">
+                <h1 class="sub-title">My <span>Skills</span></h1>
+                <div class="services-list">
+                    <div>
+                        <i class='bx bx-code-alt'></i>
+                        <h2>Web Developer</h2>
+                        <p>
+                            As a web developer, I specialize in creating responsive and dynamic websites using HTML,
+                            CSS, and JavaScript. I have experience in building full-stack applications with Python and
+                            Django, ensuring robust back-end functionality. My skills include integrating APIs,
+                            optimizing performance, and maintaining code quality through version control with Git.
+                        </p>
+                        <a href="#" class="read">Learn More</a>
+                    </div>
+                    <div>
+                        <i class='bx bxl-java' style='color:#00eeff'></i>
+                        <h2>Java</h2>
+                        <p>As a software developer, I specialize in Java, leveraging its powerful features for building
+                            scalable and efficient applications. My expertise includes working with frameworks like
+                            Spring and Hibernate, as well as developing robust back-end systems and APIs. I am committed
+                            to writing clean, maintainable code and continuously improving performance and security.</p>
+                        <a href="#" class="read">Learn More</a>
+                    </div>
+                    <div>
+                        <i class='bx bxl-python' style='color:#00eeff'></i>
+                        <h2>Python</h2>
+                        <p>As a software developer, I specialize in Python, utilizing its versatility for building a
+                            wide range of applications. My experience includes working with frameworks like Django and
+                            Flask for developing robust web applications and APIs. I am skilled in writing clean,
+                            maintainable code and focus on optimizing performance and security.</p>
+                        <a href="#" class="read">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <h1 class="sub-title">My <span>Skills</span></h1>
+
+    <section>
+        <div class="bothskills">
+
+            <div class="container1" id="skills">
+
+                <h1 class="heading1">Technical Skills</h1>
+                <div class="Technical-bars">
+                    <div class="bar"><i style="color: #147bbc" class='bx bxl-c-plus-plus'></i>
+                        <div class="info">
+                            <span>C/C++</span>
+                        </div>
+                        <div class="progress-line C">
+                            <span></span>
+                        </div>
+                    </div><br />
+                    <div class="bar"><i style="color: #c32ec9" class='bx bxl-java'></i>
+                        <div class="info">
+                            <span>Java</span>
+                        </div>
+                        <div class="progress-line java">
+                            <span></span>
+                        </div>
+                    </div><br />
+                    <div class="bar"><i style="color: #c95d2e" class='bx bxl-html5'></i>
+                        <div class="info">
+                            <span>HTML</span>
+                        </div>
+                        <div class="progress-line html">
+                            <span></span>
+                        </div>
+                    </div><br />
+                    <div class="bar"><i style="color: #147bbc" class='bx bxl-css3'></i>
+                        <div class="info">
+                            <span>CSS</span>
+                        </div>
+                        <div class="progress-line css">
+                            <span></span>
+                        </div>
+                    </div><br />
+                    <div class="bar"><i style="color: #69bcbc" class='bx bxl-python'></i>
+                        <div class="info">
+                            <span>Python</span>
+                        </div>
+                        <div class="progress-line python">
+                            <span> </span>
+                        </div>
+                    </div><br />
+                    <div class="bar"><i style="color: #b0bc1e" class='bx bxl-javascript'></i>
+                        <div class="info">
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="progress-line javaScript">
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container1">
+                <h1 class="heading1">Professional Skills</h1>
+                <div class="radial-bars">
+
+                    <div class="radial-bar">
+                        <svg x="0px" y="0px" viewBox="0 0 200 200">
+                            <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                            <circle class="path path-1" cx="100" cy="100" r="80"></circle>
+                        </svg>
+                        <div class="percentage">90%</div>
+                        <div class="text">Creativity</div>
+                    </div>
+
+                    <div class="radial-bar">
+                        <svg x="0px" y="0px" viewBox="0 0 200 200">
+                            <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                            <circle class="path path-2" cx="100" cy="100" r="80"></circle>
+                        </svg>
+                        <div class="percentage">80%</div>
+                        <div class="text">Communication</div>
+                    </div>
+
+                    <div class="radial-bar">
+                        <svg x="0px" y="0px" viewBox="0 0 200 200">
+                            <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                            <circle class="path path-3" cx="100" cy="100" r="80"></circle>
+                        </svg>
+                        <div class="percentage">85%</div>
+                        <div class="text">Problem Solving</div>
+                    </div>
+
+                    <div class="radial-bar">
+                        <svg x="0px" y="0px" viewBox="0 0 200 200">
+                            <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                            <circle class="path path-4" cx="100" cy="100" r="80"></circle>
+                        </svg>
+                        <div class="percentage">85%</div>
+                        <div class="text">TeamWork</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="contact-text">
+            <h2>Contact <span>Me</span></h2>
+            <h4>Let's Work Together</h4>
+            <p>
+                I'm available for freelance projects. <br />
+                Please feel free to contact me if you have any questions or would like to work together on a project.
+            </p>
+            <div class="contact-list">
+                <li><i class='bx bxs-send'></i>haroonmust123@gmail.com</li>
+                <li><i class='bx bx-phone'></i>+92-346 8922038</li>
+            </div>
+            <div class="contact-icons">
+                <a href=""><i class='bx bxl-facebook-circle'></i></a>
+                <a href=""><i class='bx bxl-twitter'></i></a>
+                <a href=""><i class='bx bxl-instagram'></i></a>
+                <a href=""><i class='bx bxl-linkedin'></i></a>
+            </div>
+        </div>
+
+        <div class="contact-form">
+            <form action="">
+                <input type="text" id="fullName" placeholder="Full Name" required>
+                <input type="email" id="email_id" placeholder="Your Email" required>
+
+                <input type="" placeholder="Enter Your Subject">
+
+                <textarea name="" id="message" cols="40" rows="10" placeholder="Enter Your Message" required></textarea>
+
+                <button href="#"class="send" onclick="sendEmail()">submit</button>
+            </form>
+        </div>
+
+    </section>
+    <div class="last-text">
+        <p>See you again</p>
+    </div>
+    <a href="#" class="top"><i class='bx bx-up-arrow-alt'></i></a>
+    <script src="main.js"></script>
+</body>
+
+</html>
